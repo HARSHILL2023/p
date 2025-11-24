@@ -1,8 +1,9 @@
 //21
 function countDigits(n) {
     if (n === 0) {
-        return 1;
+        console.log('1');  
     }
+    else{
     n = Math.abs(n); //convert negative value to postive
     let count = 0;
     while (n > 0) {
@@ -11,4 +12,8 @@ function countDigits(n) {
     }
    console.log(count);
 }
-countDigits(-122);
+}
+
+//22
+
+
