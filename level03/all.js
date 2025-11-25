@@ -15,5 +15,126 @@ function countDigits(n) {
 }
 
 //22
+function sumOFDigit(num) {
+    let sum = 0;
+    num = Math.abs(num);
+    if (num === 0) {
+        console.log("0");
 
+    }
+    while (num > 0) {
+        sum += num % 10;    
+        num = Math.floor(num / 10); 
+    }
+    console.log(sum); 
+}
+
+sumOFDigit(12); 
+
+//23
+
+function productOFdigit(num){
+    let product=1;
+    num=Math.abs(num);
+    if(num==0){
+        return 0;
+    }
+    while(num>0){
+        product=product*(num%10);
+        num=Math.floor(num/10);
+   
+}
+    console.log(product);
+}
+
+//24
+
+function reversenumber(num){
+    let reverse=0;
+    let temp=0;
+    if(num==0){
+        reverse=0;
+    }
+    while(num>0){
+        temp=num%10;
+        reverse=(reverse*10)+temp;
+        num=Math.floor( num/10);
+    }
+    console.log(reverse);
+    
+    
+}
+
+//25
+
+function checkPalindrome(num){
+    let reverse=0;
+    let check=num;
+    let temp=0;
+    if(num==0){
+        reverse=0;
+    }
+    while(num>0){
+        temp=num%10;
+        reverse=(reverse*10)+temp;
+        num=Math.floor( num/10);
+    }
+    if(check==reverse){
+        console.log("yes it's plaindrome")
+    }
+    else{
+        console.log("it not a palindrome");
+        
+    }
+}
+
+//26
+
+function primeNumberCheck(num){
+    if(num==2 || num==3){
+        console.log("yes it prime");
+        
+    }
+     else if(num%2!=0 && num%3!=0){
+        console.log(" yes it is  prime num");
+    }
+    else{
+        console.log("it is not  prime number");
+    }
+  }
+primeNumberCheck(8);
+
+//27
+
+function printprimeNumber(num){
+    for(var i=0;i<=num;i++){
+    if(i==2 || i==3){
+        console.log(i);
+        
+    }
+     else if(i%2!=0 && i%3!=0){
+        console.log(i);
+    }
+}
+    
+  
+}
+
+//28
+
+function fibonacci(num){
+    var a=0;
+    var b=1;
+   console.log(a);
+   console.log(b);
+    for(var i=1;i<=num;i++){
+       let c=a+b;
+       console.log(c);
+       a=b;
+       b=c;
+    }
+
+};
+
+//29
 
